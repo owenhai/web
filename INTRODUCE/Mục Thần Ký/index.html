@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đọc Truyện - Tên Truyện</title>
+
+    <!-- CSS riêng -->
+    <link rel="stylesheet" href="/INTRODUCE/thế giới hoàn mỹ/truyen1.css" />
+    <link rel="stylesheet" href="../../COMPONENTS/HEADER/header.css" />
+    <link rel="stylesheet" href="../../COMPONENTS/FOOTER/footer.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <!-- Nội dung chính -->
+    <main class="container">
+      <div class="story-header">
+        <img src="mục thần ký.jpg" alt="Hình ảnh truyện" class="story-image" />
+        <div class="story-info">
+          <h1 id="story-title">Mục thần ký</h1>
+          <hr class="divider" />
+          <p id="story-other-title">Tên khác: <span> Mu Shen Ji</span></p>
+          <hr class="divider" />
+          <p id="story-author">Tác giả: <span>Trạch Trư</span></p>
+          <hr class="divider" />
+          <p id="story-chapters">Trạng thái: <span>Hoàn thành</span></p>
+          <hr class="divider" />
+          <p id="story-genre">Thể loại: <span>Tiên hiệp, Huyền huyễn</span></p>
+          <hr class="divider" />
+          <button class="read-button" onclick="readStory()">Đọc Truyện</button>
+        </div>
+      </div>
+
+      <div class="story-description">
+        <h2>Mô Tả Truyện</h2>
+        <textarea id="story-description" readonly>
+Trong Đại Khư Tàn Lão Thôn, nơi cư ngụ của chín vị lão nhân bí ẩn, có một thiếu niên tên Tần Mục do họ nuôi dưỡng từ nhỏ. Một ngày nọ, con bò mẹ mà Tần Mục chăn dắt bỗng cất tiếng nói tiếng người, từ đó cậu càng nhận ra sự nguy hiểm và huyền bí của vùng đất Đại Khư – nơi bị thần linh bỏ rơi. Ở đây, ma thần xuất hiện trong bóng tối, xương cốt của thần linh múa may trên những tàn tích, xương rồng bảo vệ con, và những con thuyền khổng lồ kéo mặt trời di chuyển… Dù đối diện với bao hiểm nguy, Tần Mục vẫn không hề nao núng, lĩnh hội và dung hòa tất cả những gì chín vị lão truyền dạy, lấy thân bá thể mà khai phá một vùng trời riêng.
+
+Cảnh giới :
+
+Linh Thai thần tàng: Linh Thai mở linh tính, Linh Thai thành hình, là trung tâm khai thiên tích địa.
+Ngũ Diệu thần tàng: LinhThai nằm trên Linh Đài, lấy Linh Thai làm trung tâm tạo ra Ngũ Diệu. Năm ngôi sao Kim Mộc Thủy Hỏa Thổ xoay xung quanh Linh Đài.
+Lục Hợp thần tàng: Linh Đài diễn sinh đại lục, đại lục định hình, có Đông Tây Nam Bắc Thượng Hạ Lục Hợp.
+Thất Tinh thần tàng: Thành tựu Lục Hợp, tái sinh Nhật Nguyệt, kết hợp Thất Tinh.
+Thiên Nhân thần tàng: Có Thất Tinh, Linh Thai cũng đại thành, diễn sinh nhật nguyệt tinh đấu, trở thành Thiên Nhân.
+Sinh Tử thần tàng: Sau khi Thiên Nhân có nguyên thần đủ cường đại, nguyên thần liền thông sinh tử.
+Thần Kiều thần tàng: Sinh thì là Thần Kiều, một đầu Thần Kiều xuất từ Nguyên Thần, đạp Thần Kiều mà đạt Thiên Cung.
+Thiên Cung thần cảnh: Tiến vào Thiên Cung là nhảy ra khỏi khống chế của U Đô, đã không còn hạn chế tuổi thọ. Đứng ở Thiên Cung nhìn xuống bảy đại cảnh giới, hóa ra bảy đại thần tàng chỉ là một.
+Tôn Thần: Lại xưng Ngụy Thần, ở khía cạnh nào đó đã thành Thần, Nguyên Thần bay qua Thần Kiều, đến bên ngoài Nam Thiên Môn, liền giống như Thần, trường sinh bất lão.
+Chân Thần: Toàn bộ phương diện đạt tới Thần cảnh, Nguyên Thần đứng vững trước áp lực Nam Thiên Môn, tiến vào Nam Thiên Môn.
+Dao Trì: Nguyên Thần xâm nhập đi vào Dao Trì, Dao Trì có thể gọi là Dao Đài hoặc Thiên Trì, mọi người đều gọi là Thiên Thần.
+Trảm Thần Đài: Nguyên Thần đi vào Trảm Thần Đài, cửa này, tu vi nâng cao một bước, Nguyên Thần không qua được bị Trảm Thần Đài chém chết.
+Ngọc Kinh: Nguyên Thần đi vào Ngọc Kinh Thành, nơi này chính là nơi Thiên Đế ở.
+Lăng Tiêu: Lăng Tiêu Điện ở bên trong Ngọc Kinh Thành. Cầu thang trước điện, mỗi bậc một câu hỏi, tổng cộng 999 bậc, giải đáp toàn bộ có thể lên Lăng Tiêu Điện, tiến quân cảnh giới tiếp theo.
+Đế Tọa: Mở cửa Lăng Tiêu Điện, Đế Tọa hiện hình, Nguyên Thần ngồi trên Đế Tọa, quan sát bản thân, chính mình là Thiên Đế.
+Thiên Đình: Chế tạo Thiên Đình, mở ra 36 Thiên Cung, 72 Bảo Điện, liền có thể thành Thiên Đình.
+        </textarea>
+      </div>
+
+      <div class="chapter-list">
+        <h2>Các Chương</h2>
+        <ul id="chapter-list">
+          <li>
+            <a href="/READ/mục thần ký/chapter1/chapter1.html"
+              >Chương 1: Trời tối đừng ra ngoài</a
+            >
+          </li>
+          <li>
+            <a href="/READ/mục thần ký/chapter2/chapter2.html"
+              >Chương 2: Máu tứ linh</a
+            >
+          </li>
+          <li>
+            <a href="/READ/mục thần ký/chapter3/chapter3.html"
+              >Chương 3: Thần thông</a
+            >
+          </li>
+          <!-- Thêm các chương khác ở đây -->
+        </ul>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load header/footer -->
+    <script src="../../COMPONENTS/HEADER/header.js"></script>
+    <script src="../../COMPONENTS/FOOTER/footer.js"></script>
+
+    <!-- Script xử lý nút "Đọc Truyện" -->
+    <script src="/INTRODUCE/mục thần ký/index.js"></script>
+  </body>
+</html>

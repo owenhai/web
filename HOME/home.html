@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Đọc Truyện - Trang Chủ</title>
+
+    <!-- CSS riêng cho trang home -->
+    <link rel="stylesheet" href="home.css" />
+
+    <!-- CSS cho header và footer -->
+    <link rel="stylesheet" href="../COMPONENTS/HEADER/header.css" />
+    <link rel="stylesheet" href="../COMPONENTS/FOOTER/footer.css" />
+  </head>
+  <body>
+    <!-- Gắn HEADER -->
+    <div id="header-placeholder"></div>
+
+    <!-- Nội dung chính -->
+    <main class="container main-content">
+      <h1 class="page-title">Truyện Nổi Bật</h1>
+      <section
+        class="story-grid"
+        id="story-grid"
+        aria-live="polite"
+        aria-relevant="additions removals"
+      >
+        <!-- Story cards sẽ được chèn động -->
+      </section>
+      <nav class="pagination" id="pagination" aria-label="Phân trang">
+        <!-- Nút phân trang động -->
+      </nav>
+    </main>
+
+    <!-- Gắn FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script riêng cho trang home -->
+    <script src="home.js"></script>
+
+    <!-- Script để load header và footer -->
+    <script src="../COMPONENTS/HEADER/header.js"></script>
+    <script src="../COMPONENTS/FOOTER/footer.js"></script>
+  </body>
+</html>

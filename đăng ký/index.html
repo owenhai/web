@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đăng ký - Modern Auth UI</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="backdrop" id="dialogBackdrop">
+      <main
+        class="auth-container"
+        role="main"
+        aria-label="Authentication Forms"
+      >
+        <button class="close-btn" aria-label="Đóng" onclick="closeDialog()">
+          ✖
+        </button>
+        <header class="auth-header">
+          <h1 id="formTitle">Đăng ký</h1>
+          <p class="auth-subheader" id="formSubtitle">
+            Tạo tài khoản mới của bạn!
+          </p>
+        </header>
+
+        <!-- REGISTER FORM -->
+        <form id="registerForm" role="tabpanel">
+          <div>
+            <label for="registerUsername">Tên đăng nhập</label>
+            <input
+              type="text"
+              id="registerUsername"
+              name="registerUsername"
+              required
+              placeholder="Tên đăng nhập"
+              autocomplete="username"
+            />
+          </div>
+          <div>
+            <label for="registerName">Họ và tên</label>
+            <input
+              type="text"
+              id="registerName"
+              name="registerName"
+              required
+              placeholder="Nguyễn Văn A"
+              autocomplete="name"
+            />
+          </div>
+          <div>
+            <label for="registerEmail">Email</label>
+            <input
+              type="email"
+              id="registerEmail"
+              name="registerEmail"
+              required
+              placeholder="email@example.com"
+              autocomplete="email"
+            />
+          </div>
+          <div class="password-wrapper">
+            <label for="registerPassword">Mật khẩu</label>
+            <input
+              type="password"
+              id="registerPassword"
+              name="registerPassword"
+              required
+              placeholder="••••••••"
+              autocomplete="new-password"
+            />
+            <span
+              class="material-icons toggle-password"
+              tabindex="0"
+              role="button"
+              aria-label="Hiện hoặc ẩn mật khẩu"
+              >visibility</span
+            >
+          </div>
+          <div class="password-wrapper">
+            <label for="registerConfirmPassword">Xác nhận mật khẩu</label>
+            <input
+              type="password"
+              id="registerConfirmPassword"
+              name="registerConfirmPassword"
+              required
+              placeholder="••••••••"
+              autocomplete="new-password"
+            />
+            <span
+              class="material-icons toggle-password"
+              tabindex="0"
+              role="button"
+              aria-label="Hiện hoặc ẩn mật khẩu"
+              >visibility</span
+            >
+          </div>
+          <button type="submit" class="submit-btn" aria-live="polite">
+            Đăng ký
+          </button>
+          <p class="form-footer">
+            Đã có tài khoản? <a href="/đăng nhập/index.html">Đăng nhập</a>
+          </p>
+          <p
+            class="error-message"
+            id="registerError"
+            aria-live="assertive"
+            style="display: none"
+          ></p>
+        </form>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

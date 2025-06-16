@@ -1,0 +1,107 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #121212;
+  color: #d0d0d0;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+footer {
+  background-color: #1c1c1c;
+  padding: 32px 24px 24px;
+  user-select: none;
+  border-top: 1px solid #2f2f2f;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Chỉ một cột */
+  gap: 40px;
+}
+
+/* Footer section title */
+.footer-title {
+  font-weight: 600;
+  font-size: 1.5rem; /* Tăng kích thước tiêu đề */
+  margin-bottom: 12px;
+  letter-spacing: 0.03em;
+}
+
+/* TruyenHay title styling */
+.footer-title .red {
+  color: #ff4c4c; /* Màu đỏ cho "Truyen" */
+}
+
+.footer-title .yellow {
+  color: #fbc531; /* Màu vàng cho "Hay" */
+}
+
+/* About text */
+.footer-about {
+  font-size: 1rem; /* Tăng kích thước chữ */
+  line-height: 1.5;
+  color: #aaa;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #777;
+  text-align: center;
+}
+
+/* Reduce vertical height on tall/narrow / portrait screens */
+@media (max-height: 700px) and (max-width: 640px) {
+  footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .footer-grid {
+    gap: 24px;
+  }
+  .footer-about {
+    max-width: 100%;
+    font-size: 0.9rem; /* Giảm kích thước chữ */
+    line-height: 1.4;
+  }
+  .footer-title {
+    margin-bottom: 8px;
+    font-size: 1.2rem; /* Giảm kích thước tiêu đề */
+  }
+  .footer-bottom {
+    font-size: 0.8rem;
+    margin-top: 30px;
+  }
+}
+
+/* Mobile (single column) */
+@media (max-width: 640px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+.footer-disclaimer {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+  margin: 12px 0;
+  text-align: center;
+}
+.footer-disclaimer a {
+  color: #ffcc00;
+  text-decoration: underline;
+}

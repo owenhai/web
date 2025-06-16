@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đọc Truyện - Tên Truyện</title>
+
+    <!-- CSS riêng -->
+    <link rel="stylesheet" href="/INTRODUCE/thế giới hoàn mỹ/truyen1.css" />
+    <link rel="stylesheet" href="../../COMPONENTS/HEADER/header.css" />
+    <link rel="stylesheet" href="../../COMPONENTS/FOOTER/footer.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <!-- Nội dung chính -->
+    <main class="container">
+      <div class="story-header">
+        <img
+          src="đấu phá thương khung.jpg"
+          alt="Hình ảnh truyện"
+          class="story-image"
+        />
+        <div class="story-info">
+          <h1 id="story-title">Đấu Phá Thương Khung</h1>
+          <hr class="divider" />
+          <p id="story-other-title">Tên khác: <span> Fights Break</span></p>
+          <hr class="divider" />
+          <p id="story-author">Tác giả: <span>Thiên Tàm Thổ Đậu</span></p>
+          <hr class="divider" />
+          <p id="story-chapters">Trạng thái: <span>Hoàn thành</span></p>
+          <hr class="divider" />
+          <p id="story-genre">Thể loại: 
+            <a href="/PAGE/hot.html?genre=Cổ Trang">Cổ Trang</a>
+            <a href="/PAGE/hot.html?genre=Tiên Hiệp">Tiên Hiệp</a>
+          <hr class="divider" />
+          <button class="read-button" onclick="readStory()">Đọc Truyện</button>
+        </div>
+      </div>
+
+      <div class="story-description">
+        <h2>Mô Tả Truyện</h2>
+        <textarea id="story-description" readonly>
+Đấu Phá Thương Khung kể về một thế giới thuộc về Đấu Khí, không hề có ma pháp hoa tiếu diễm lệ, chỉ có đấu khí cương mãnh phồn thịnh! Đấu Phá Thương Khung cũng là nơi mà các Luyện Dược Sư, những nhà luyện đan dược giúp tăng cấp tu luyện, phục hồi sức lực, hay thậm chí cửu tử hoàn sinh vô cùng được trọng vọng bởi tư chất hiếm có của họ. Tưởng tượng thế giới đó sẽ phát triển ra sao? Mời các bạn xem Đấu Phá Thương Khung! Hệ Thống Tu Luyện: Đấu Giả, Đấu Sư, Đại Đấu Sư, Đấu Linh, Đấu Vương, Đấu Hoàng, Đấu Tông, Đấu Tôn, Đấu Thánh, Đấu Đế. Hãy Bắt Đầu Từ Tiêu Viêm – một thiên tài tu luyện trong phút chốc trở thành phế vật, từ phế vật lại từng bước khẳng định lại chính mình! Trên bước đường từng bước khẳng định lại bản thân, trở thành một cao thủ siêu hạng, cũng như một Luyện Dược Sư đỉnh cao, Tiêu Viêm được một vị tôn sư bí mật có thân phận cùng năng lực cực cao không ngừng chỉ dạy. Hãy cùng bắt đầu cuộc hành trình đó với Đấu Phá Thương Khung.
+        </textarea>
+      </div>
+
+      <div class="chapter-list">
+        <h2>Các Chương</h2>
+        <ul id="chapter-list">
+          <li>
+            <a href="/READ/đấu phá thương khung/chapter1/chapter1.html"
+              >Chương 1: Thiên tài rơi rụng</a
+            >
+          </li>
+          <li>
+            <a href="/READ/đấu phá thương khung/chapter2/chapter2.html"
+              >Chương 2: Đấu khí đại lục</a
+            >
+          </li>
+          <li>
+            <a href="/READ/đấu phá thương khung/chapter3/chapter3.html"
+              >Chương 3: Khách nhân</a
+            >
+          </li>
+          <!-- Thêm các chương khác ở đây -->
+        </ul>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load header/footer -->
+    <script src="../../COMPONENTS/HEADER/header.js"></script>
+    <script src="../../COMPONENTS/FOOTER/footer.js"></script>
+
+    <!-- Script xử lý nút "Đọc Truyện" -->
+    <script src="/INTRODUCE/đấu phá thương khung/index.js"></script>
+  </body>
+</html>

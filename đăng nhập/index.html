@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đăng nhập - Modern Auth UI</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="backdrop" id="dialogBackdrop">
+      <main
+        class="auth-container"
+        role="main"
+        aria-label="Authentication Forms"
+      >
+        <button class="close-btn" aria-label="Đóng" onclick="closeDialog()">
+          ✖
+        </button>
+        <header class="auth-header">
+          <h1 id="formTitle">Đăng nhập</h1>
+          <p class="auth-subheader" id="formSubtitle">
+            Chào mừng bạn quay lại!
+          </p>
+        </header>
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm" role="tabpanel">
+          <div>
+            <label for="loginUsername">Tên đăng nhập</label>
+            <input
+              type="text"
+              id="loginUsername"
+              name="loginUsername"
+              autocomplete="username"
+              required
+              placeholder="Tên đăng nhập"
+            />
+          </div>
+          <div class="password-wrapper">
+            <label for="loginPassword">Mật khẩu</label>
+            <input
+              type="password"
+              id="loginPassword"
+              name="loginPassword"
+              autocomplete="current-password"
+              required
+              placeholder="••••••••"
+            />
+            <span
+              class="material-icons toggle-password"
+              tabindex="0"
+              role="button"
+              aria-label="Hiện hoặc ẩn mật khẩu"
+              >visibility</span
+            >
+          </div>
+          <button type="submit" class="submit-btn" aria-live="polite">
+            Đăng nhập
+          </button>
+          <p class="form-footer">
+            Chưa có tài khoản? <a href="/đăng ký/index.html">Đăng ký ngay</a>
+          </p>
+          <p
+            class="error-message"
+            id="loginError"
+            aria-live="assertive"
+            style="display: none"
+          ></p>
+        </form>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

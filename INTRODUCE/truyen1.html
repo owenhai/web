@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đọc Truyện - Tên Truyện</title>
+
+    <!-- CSS riêng cho trang truyện -->
+    <link rel="stylesheet" href="truyen1.css" />
+
+    <!-- CSS cho header và footer -->
+    <link rel="stylesheet" href="../COMPONENTS/HEADER/header.css" />
+    <link rel="stylesheet" href="../COMPONENTS/FOOTER/footer.css" />
+
+    <!-- Google Fonts & Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Gắn HEADER -->
+    <div id="header-placeholder"></div>
+
+    <!-- Nội dung chính -->
+    <div class="container">
+      <div class="story-header">
+        <img
+          src="https://via.placeholder.com/200"
+          alt="Hình ảnh truyện"
+          class="story-image"
+        />
+        <div class="story-info">
+          <h1 id="story-title">Tên Truyện</h1>
+          <p id="story-author">Tác giả: Tác Giả</p>
+          <p id="story-chapters">Số chương: 100</p>
+          <p id="story-year">Năm xuất bản: 2025</p>
+          <p id="story-views">Lượt xem: 1,000,000</p>
+          <p id="story-rating">Đánh giá: ★★★★☆</p>
+          <p id="story-status">Trạng thái: Đang tiến hành</p>
+          <p id="story-genre">
+            Thể loại:
+            <a href="../PAGE/hot.html?genre=Action">Action</a>,
+            <a href="../PAGE/hot.html?genre=Adventure">Adventure</a>
+          </p>
+          <button class="read-button" onclick="readStory()">Đọc Truyện</button>
+        </div>
+      </div>
+
+      <div class="story-description">
+        <h2>Mô Tả Truyện</h2>
+        <p id="story-description">
+          Đây là mô tả ngắn gọn về nội dung của truyện.
+        </p>
+      </div>
+
+      <div class="chapter-list">
+        <h2>Các Chương</h2>
+        <ul id="chapter-list">
+          <li><a href="chapter1.html">Chương 1: Tiêu đề chương 1</a></li>
+          <li><a href="chapter2.html">Chương 2: Tiêu đề chương 2</a></li>
+          <li><a href="chapter3.html">Chương 3: Tiêu đề chương 3</a></li>
+          <!-- Thêm các chương khác ở đây -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- Gắn FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Script riêng cho trang truyện -->
+    <script src="truyen1.js"></script>
+
+    <!-- Script để load header và footer -->
+    <script src="../COMPONENTS/HEADER/header.js"></script>
+    <script src="../COMPONENTS/FOOTER/footer.js"></script>
+  </body>
+</html>

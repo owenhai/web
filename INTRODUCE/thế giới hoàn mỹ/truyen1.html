@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đọc Truyện - Tên Truyện</title>
+
+    <!-- CSS riêng -->
+    <link rel="stylesheet" href="truyen1.css" />
+    <link rel="stylesheet" href="../../COMPONENTS/HEADER/header.css" />
+    <link rel="stylesheet" href="../../COMPONENTS/FOOTER/footer.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div id="header-placeholder"></div>
+
+    <!-- Nội dung chính -->
+    <main class="container">
+      <div class="story-header">
+        <img src="truyen1.jpg" alt="Hình ảnh truyện" class="story-image" />
+        <div class="story-info">
+          <h1 id="story-title">Thế giới hoàn mỹ</h1>
+          <hr class="divider" />
+          <p id="story-other-title">Tên khác: <span>Perfect World</span></p>
+          <hr class="divider" />
+          <p id="story-author">Tác giả: <span>Thần Đông</span></p>
+          <hr class="divider" />
+          <p id="story-chapters">Trạng thái: <span>Hoàn thành</span></p>
+          <hr class="divider" />
+          <p id="story-genre">
+            Thể loại:
+            <a href="/PAGE/hot.html?genre=Cổ Trang">Tu tiên</a>
+            <a href="/PAGE/hot.html?genre=Tiên Hiệp">Huyền huyễn</a>
+          </p>
+
+          <hr class="divider" />
+          <button class="read-button" onclick="readStory()">Đọc Truyện</button>
+        </div>
+      </div>
+
+      <div class="story-description">
+        <h2>Mô Tả Truyện</h2>
+        <textarea id="story-description" readonly>
+Thế Giới Hoàn Mỹ cải biên từ tiểu thuyết cùng tên. Hắn vì tu đạo mà sinh, vì ứng kiếp mà đến. Hắn hoá thân thành vô vàn mưa máu, vẩy rơi năm tháng vạn cổ, trải qua vô số tu luyện của thời không và thử thách của dòng chảy tháng năm. Hắn hoá thành vạn cổ, hoá thành tự tại. Xem nam chính Thạch Hạo làm thế nào đạt đến huy hoàng đỉnh cao một đời, tạo ra truyền thuyết vô tận.
+
+Main: Hoang Thiên Đế – Thạch Hạo
+
+Vợ: Hỏa Linh Nhi (chính thất), Vân Hi (mẹ của Tiểu Thạch Đầu), Thanh Y
+
+Cảnh giới:
+
+Phàm Nhân:
+1. Bàn Huyết Cảnh
+2. Động Thiên Cảnh: 1 Động Thiên – 10 Động Thiên (Cực Cảnh)
+3. Hóa Linh Cảnh: Thân Thể Thành Linh – Trọng Tố Chân Ngã – Động Thiên Dưỡng Linh
+4. Minh Văn Cảnh (Phong Hầu)
+5. Liệt Trận Cảnh (Vương Giả)
+6. Tôn Giả Cảnh
+Thần Đạo:
+1. Thần Hỏa Cảnh (Ngụy Thần)
+2. Chân Nhất Cảnh (Chân Thần)
+3. Thánh Tế Cảnh (Thần Vương)
+4. Thiên Thần Cảnh
+5. Hư Đạo Cảnh
+6. Trảm Ngã Cảnh
+7. Độn Nhất Cảnh (Chí Tôn)
+8. Chí Tôn Cảnh
+9. Chí Tôn Cực Đạo (Nhân Đạo Đỉnh Phong)
+Tiên Đạo (Trường Sinh Lĩnh Vực): Chân Tiên → Tiên Vương → Chuẩn Tiên Đế → Tiên Đế
+Hệ Thống Tu Luyện do main tự sáng tạo: Luân Hải Bí Cảnh → Đạo Cung Bí Cảnh → Tứ Cực Bí Cảnh → Hóa Long Bí Cảnh → Tiên Đài Bí Cảnh (thế thứ 10 Độ Kiếp Thành Chân Tiên) → Tiên Vương → Chuẩn Tiên Đế → Tiên Đế
+        </textarea>
+      </div>
+
+      <div class="chapter-list">
+        <h2>Các Chương</h2>
+        <ul id="chapter-list">
+          <li>
+            <a href="/READ/thế giới hoàn mỹ/chapter1/chapter1.html"
+              >Chương 1: Đại hoang</a
+            >
+          </li>
+          <li>
+            <a href="/READ/thế giới hoàn mỹ/chapter2/chapter2.html"
+              >Chương 2: Triều khí bừng bừng</a
+            >
+          </li>
+          <li>
+            <a href="/READ/thế giới hoàn mỹ/chapter3/chapter3.html"
+              >Chương 3: Cốt văn</a
+            >
+          </li>
+          <!-- Thêm các chương khác ở đây -->
+        </ul>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Load header/footer -->
+    <script src="../../COMPONENTS/HEADER/header.js"></script>
+    <script src="../../COMPONENTS/FOOTER/footer.js"></script>
+
+    <!-- Script xử lý nút "Đọc Truyện" -->
+    <script src="truyen1.js"></script>
+  </body>
+</html>

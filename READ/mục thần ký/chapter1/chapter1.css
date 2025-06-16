@@ -1,0 +1,136 @@
+/* Reset & base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121212;
+  font-family: "Arial", sans-serif;
+  color: #e0e0e0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container trung tâm */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background: #1e1e1e;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 16px 12px;
+  }
+}
+
+/* Tiêu đề truyện */
+.story-title {
+  font-size: 32px;
+  color: #fbc531;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Tiêu đề chương */
+.chapter-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.chapter-header h2 {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  .chapter-header h2 {
+    font-size: 22px;
+  }
+}
+
+/* Navigation buttons */
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 12px;
+}
+
+/* Link style nếu dùng <a class="nav-button"> */
+.nav-button {
+  background: transparent;
+  border: 2px solid #f97316;
+  color: #f97316;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(255, 105, 135, 0.2);
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Hiệu ứng sáng khi hover */
+.nav-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-20deg);
+  transition: left 0.4s;
+}
+
+.nav-button:hover::before {
+  left: 125%;
+}
+
+.nav-button:hover {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(255, 105, 135, 0.4);
+}
+
+.nav-button:active {
+  transform: scale(0.96);
+  box-shadow: 0 4px 10px rgba(255, 105, 135, 0.2);
+}
+
+/* Nếu vẫn dùng <a><button> thì dùng class này cho <a> */
+.nav-link {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Nội dung chương */
+.chapter-content {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #bbbbbb;
+  margin-bottom: 30px;
+  white-space: pre-wrap;
+}
+
+.chapter-content pre {
+  white-space: pre-wrap;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #bbbbbb;
+}

@@ -1,5 +1,4 @@
 // Tính đường dẫn tương đối tùy theo độ sâu thư mục hiện tại
-fetch("COMPONENTS/HEADER/header.html")
 
 
 window.addEventListener("DOMContentLoaded", () => {

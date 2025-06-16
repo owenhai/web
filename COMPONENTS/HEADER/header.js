@@ -1,7 +1,10 @@
 // Tính đường dẫn tương đối tùy theo độ sâu thư mục hiện tại
 function getRelativePath(target) {
   const currentPath = window.location.pathname;
-  const depth = currentPath.split("/").length - 2; // Trừ domain + tên file
+  const depth = currentPath.endsWith("/") 
+  ? currentPath.split("/").length - 2 
+  : currentPath.split("/").length - 3;
+
   return "../".repeat(depth) + target;
 }
 

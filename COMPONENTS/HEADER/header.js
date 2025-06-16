@@ -1,12 +1,6 @@
 // Tính đường dẫn tương đối tùy theo độ sâu thư mục hiện tại
-function getRelativePath(target) {
-  const currentPath = window.location.pathname;
-  const depth = currentPath.endsWith("/") 
-  ? currentPath.split("/").length - 2 
-  : currentPath.split("/").length - 3;
+fetch("COMPONENTS/HEADER/header.html")
 
-  return "../".repeat(depth) + target;
-}
 
 window.addEventListener("DOMContentLoaded", () => {
   fetch(getRelativePath("COMPONENTS/HEADER/header.html"))
